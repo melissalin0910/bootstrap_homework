@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>抱皂美人-首頁</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/mine.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/logo/virgo_logo2.png"
+      type="image/x-icon"
+    />
+
+    <style>
+      .container {
+        font-family: "標楷體", "Tahoma";
+      }
+
+      .text-cover1 {
+        /* background-image: linear-gradient( 180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)); */
+        height: 80vh;
+        border-radius: 15px;
+        padding: 15px;
+      }
+
+      .text-cover {
+        background-image: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.8)
+        );
+        border-radius: 15px;
+        padding: 15px;
+      }
+      h3 a {
+        color: var(--mycolor24);
+      }
+
+      .backImage {
+        /* background-image: url(); */
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .filter {
+        background-color: rgba(255, 255, 255, 0.3);
+        min-height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+      }
+
+      .login {
+        width: 70%;
+        background-color: rgba(182, 175, 171, 0.2);
+        border-radius: 10px;
+        margin-left: 25vw;
+        border: 1px solid var(--mycolor18);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container text-dark">
+      <section
+        class="bg-cover p-5 text-cover backImage"
+        style="
+          background-image: url(./images/bg2.jpg);
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="filter">
+          <div class="row align-items-start">
+            <div class="col-md-4 text-cover1">
+              <div class="row align-items-center flex-column">
+                <div class="col-12 col-lg-8 col-xl-4">
+                  <a class="m-3"
+                    ><img
+                      src="images/logo/virgo_logo2.png"
+                      title="抱皂美人圖標"
+                      alt="抱皂美人圖標"
+                      height="100vh"
+                  /></a>
+                  <a class="m-2"
+                    ><img
+                      src="images/logo/抱皂美人.png"
+                      title="抱皂美人"
+                      alt="抱皂美人"
+                      width="120vw"
+                  /></a>
+                </div>
+
+                <div class="col-12 col-lg-8 col-xl-4 text-bg-light my-5">
+                  <h5 class="py-2 text-muted">簡單 不簡單</h5>
+                  <h6 class="my-5">
+                    <a
+                      href="login.html"
+                      class="text-decoration-none d-inline-flex"
+                      >會員登入</a
+                    >
+                    /<br />
+                    <a href="member.html" class="text-decoration-none"
+                      >註冊新會員</a
+                    >
+                  </h6>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-4 text-bg-light my-5">
+                  <h6>More info. :</h6>
+                  <hr />
+                  <div class="d-inline-flex">
+                    <a href="#"
+                      ><img
+                        class="m-1"
+                        src="./images/Icons/facebook.svg"
+                        alt="臉書粉絲團"
+                        width="30px"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        class="m-1"
+                        src="./images/Icons/instagram.svg"
+                        alt="IG粉絲團"
+                        width="30px"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        class="m-1"
+                        src="./images/Icons/youtube.svg"
+                        alt="youtube介紹"
+                        width="30px"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        class="m-1"
+                        src="./images/Icons/twitter.svg"
+                        alt="twitter專訪"
+                        width="30px"
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-4 text-bg-light my-5">
+                  <h6>與我聯絡 :</h6>
+                  <a
+                    class="text-decoration-none text-muted"
+                    href="mailto: looloo.soap@gmail.com"
+                    >looloo.soap@gmail.com</a
+                  >
+                  <img
+                    class="py-2"
+                    src="./images/Icons/抱皂美人信箱.png"
+                    alt=""
+                    width="80vw"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8 my-5">
+              <div class="row justify-content-start align-items-start py-5">
+                <div class="col-9 col-lg-6 col-xl-3 m-3 login">
+                  <h3 class="text-center my-4">新會員註冊</h3>
+                  <hr />
+                  <form action="">
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="account1"
+                      name="account1"
+                      placeholder="帳號需包含英文大小寫及特殊符號(至少8碼)"
+                    />
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="password2"
+                      name="password2"
+                      placeholder="您的密碼設定(至少8碼)"
+                    />            
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="password3"
+                      name="password2"
+                      placeholder="確認您的密碼(同上列設定)"
+                    />                   
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="name2"
+                      name="name2"
+                      placeholder="您的真實姓名(訂貨人)"
+                    />
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="mobile"
+                      name="mobile"
+                      placeholder="您的手機號碼"
+                    />
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="addr"
+                      name="addr"
+                      placeholder="您的收件地址"
+                    />
+                    <input
+                      type="email"
+                      class="form-control mb-3"
+                      id="email"
+                      name="email"
+                      placeholder="您的e-mail信箱"
+                    />
+                    <div class="w-100">
+                      <input
+                        type="text"
+                        class="form-control mb-3 w-50 float-start text-start"
+                        id="test2"
+                        name="test2"
+                        placeholder="請輸入驗證碼："
+                      />
+                      <div class="w-40 float-start mx-2">
+                        <img src="./images/驗證碼2.jpg" alt="" width="100px" />
+                      </div>
+                    </div>
+                    
+                    <div class="text-center p-3">
+                      <button class="btn btn-info">確認</button>
+                      <button class="btn btn-light">取消</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="text-muted pt-3 pe-5 text-end">
+            <h5>@此網站由抱皂美人設計團隊維護</h5>
+          </footer>
+        </div>
+      </section>
+
+      <div class="col-6">
+        <div class="mb-3">
+            <label for="" class="form-label">密碼</label>
+            <input type="password" class="form-control is-valid">
+            <div class="valid-feedback">密碼輸入正確!</div>
+            <div class="invalid-feedback">密碼輸入錯誤!</div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input is-invalid">
+            <label for="" class="form-check-label">詳閱和遵守會員條款!</label>
+            <div class="valid-feedback">你已經同意遵守!</div>
+            <div class="invalid-feedback">你必須先同意遵守!</div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+  </body>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+</html>
